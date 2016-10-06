@@ -36,36 +36,82 @@
 
 
 var System = function (updateFPS, canvasID) {
-    
+
     var canvasContext;
     var canvasElement;
 
+    var entities = [];
+    var player;
+    
+
+    var gametick = 0; // | >>gt1<< | >>gt2<< | >>gt3<< | >>gt4<< | >>gt5<< | => 1S
+    var frameID = 0;    
+    var dt = 0;
+    var now = 0;
+    var last = 0;
+
+    //Clear or pause animation timer
+    var timerID = 0;
 
     function init() {
-        canvasElement = document.getElementById("canvas2d");
+        canvasElement = document.getElementById(canvasID);
         canvasContext = canvasElement.getContext("2d");
+
+        gametick = 1000 / updateFPS;
+        gametick = parseFloat(gametick.toFixed(5)); //to fix float errors
+
+
+        //Map initialization
+        //Hud initialization
+        //Player initialization
+        //ZombieManager initialization
+        //BulletManager initialization
+
+        var timerID = setInterval(run(), 1);
     }
 
 
     function run() {
         //Main GameLoop
 
+        //| >>gt1<< | >>gt2<< | >>gt3<< | >>gt4<< | >>gt5<< | => 1S
+
+        now = Date.now();
+        dt += Math.Main(now - last, gametick * 5);
+
+        while (dt > gametick) {
+            update();
+            dt -= gametick;
+        }        
+        
+        requestAnimationFrame(draw());
 
     }
 
 
     function update() {
+        
+        //Map update        
+        //Player update
+        //Zombies update
+        //Bullets update
+        //Hud update
+
     }
 
 
     function draw() {
 
-    }  
+        //Map draw        
+        //Player draw
+        //Zombies draw
+        //Bullets draw
+        //Hud draw
 
-
+    }
 
 }
 
 function startGame() {
-    game.system = new System()
+    game.system = new System(30, "canvas2d");
 }
