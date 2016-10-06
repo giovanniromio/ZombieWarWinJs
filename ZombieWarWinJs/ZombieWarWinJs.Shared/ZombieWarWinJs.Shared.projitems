@@ -6,7 +6,9 @@
     <SharedGUID>4f336564-3d9f-47bc-b757-e03a2f1c5c60</SharedGUID>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)entities\entity.js" />
     <Content Include="$(MSBuildThisFileDirectory)entities\player.js" />
+    <Content Include="$(MSBuildThisFileDirectory)gameUtilities\frame.js" />
     <Content Include="$(MSBuildThisFileDirectory)js\navigator.js" />
     <Content Include="$(MSBuildThisFileDirectory)js\default.js" />
     <Content Include="$(MSBuildThisFileDirectory)pages\game\game.css" />
