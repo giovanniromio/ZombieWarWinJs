@@ -37,6 +37,7 @@
 
 var System = function (updateFPS, canvasID) {
 
+    //todo questi due devono essere prorogati fino alla classe frame perchè è quella che chiama la draw sul canvasContext!
     var canvasContext;
     var canvasElement;
 
@@ -60,12 +61,14 @@ var System = function (updateFPS, canvasID) {
         gametick = 1000 / updateFPS;
         gametick = parseFloat(gametick.toFixed(5)); //to fix float errors
 
-
         //Map initialization
-        //Hud initialization
+        player = createEntity("Player");
+
+
         //Player initialization
         //ZombieManager initialization
         //BulletManager initialization
+        //Hud initialization
 
         var timerID = setInterval(run(), 1);
     }
@@ -114,4 +117,12 @@ var System = function (updateFPS, canvasID) {
 
 function startGame() {
     game.system = new System(30, "canvas2d");
+}
+
+function createEntity(entity, settings) {
+    if (typeof settings !== "undefined") {
+        return new game[entity](settings);
+    } else {
+        return new game[entity]();
+    }
 }
