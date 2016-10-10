@@ -1,0 +1,15 @@
+C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Windows\bin\Debug\ReverseMap\resources.pri
+C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Windows\bin\Debug\AppxManifest.xml
+C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Windows\bin\Debug\ZombieWarWinJs.Windows.build.appxrecipe
+C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Windows\bld\Debug\priconfig.xml
+C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Windows\bld\Debug\priconfig.xml.intermediate
+C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Windows\bld\Debug\layout.resfiles
+C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Windows\bld\Debug\layout.resfiles.intermediate
+C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Windows\bld\Debug\resources.resfiles
+C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Windows\bld\Debug\resources.resfiles.intermediate
+C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Windows\bld\Debug\pri.resfiles
+C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Windows\bld\Debug\pri.resfiles.intermediate
+C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Windows\bld\Debug\qualifiers.txt
+C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Windows\bld\Debug\qualifiers.txt.intermediate
+C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Windows\bld\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Windows\bld\Debug\ProjectArchitectures.txt

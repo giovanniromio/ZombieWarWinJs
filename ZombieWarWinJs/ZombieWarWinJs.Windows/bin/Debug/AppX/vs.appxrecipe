@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>ROMIOPC</Machine>
+    <WindowsUser>giovanni.romio</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetOsVersion>6.3</TargetOsVersion>
+    <TargetOsDescription>Windows 8.1</TargetOsDescription>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>90758a0f-74ed-44c0-8791-de14f548ebfb</PackageIdentityName>
+    <PackageIdentityPublisher>CN=Giovanni</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Windows\bld\Debug\</IntermediateOutputPath>
+    <RemoteDeploymentType>
+    </RemoteDeploymentType>
+    <PackageRegistrationPath>
+    </PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <RegisteredManifestChecksum>874F98F0F457D580324BE8C200FF14D421F6B5B02CD4F4E0A2AB6E89FF542588</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>90758a0f-74ed-44c0-8791-de14f548ebfb_1.0.0.0_neutral__cqk1n1am2sp52</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>90758a0f-74ed-44c0-8791-de14f548ebfb_cqk1n1am2sp52!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>90758a0f-74ed-44c0-8791-de14f548ebfb</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Giovanni</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Windows\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-10-10T11:42:36.464</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Windows\css\default.css">
+      <PackagePath>css\default.css</PackagePath>
+      <Modified>2016-10-06T07:51:41.874</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Windows\pages\home\home.css">
+      <PackagePath>pages\home\home.css</PackagePath>
+      <Modified>2016-10-06T07:51:41.901</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Shared\pages\game\game.css">
+      <PackagePath>pages\game\game.css</PackagePath>
+      <Modified>2016-10-06T07:51:41.839</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Windows\default.html">
+      <PackagePath>default.html</PackagePath>
+      <Modified>2016-10-06T07:51:41.877</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Shared\pages\game\game.html">
+      <PackagePath>pages\game\game.html</PackagePath>
+      <Modified>2016-10-10T12:37:26.025</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Shared\pages\home\home.html">
+      <PackagePath>pages\home\home.html</PackagePath>
+      <Modified>2016-10-10T12:32:09.415</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Windows\images\logo.png">
+      <PackagePath>images\logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-10-06T07:51:41.883</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Windows\images\smalllogo.png">
+      <PackagePath>images\smalllogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-10-06T07:51:41.886</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Windows\images\splashscreen.png">
+      <PackagePath>images\splashscreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-10-06T07:51:41.888</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Windows\images\storelogo.png">
+      <PackagePath>images\storelogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-10-06T07:51:41.892</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Windows\resources\sprites\player.png">
+      <PackagePath>resources\sprites\player.png</PackagePath>
+      <Modified>2016-10-06T07:51:41.904</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Shared\entities\entity.js">
+      <PackagePath>entities\entity.js</PackagePath>
+      <Modified>2016-10-10T12:25:47.352</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Shared\entities\player.js">
+      <PackagePath>entities\player.js</PackagePath>
+      <Modified>2016-10-10T12:26:43.644</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Shared\gameUtilities\frame.js">
+      <PackagePath>gameUtilities\frame.js</PackagePath>
+      <Modified>2016-10-06T15:40:53.250</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Shared\js\navigator.js">
+      <PackagePath>js\navigator.js</PackagePath>
+      <Modified>2016-10-06T07:51:41.831</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Shared\js\default.js">
+      <PackagePath>js\default.js</PackagePath>
+      <Modified>2016-10-06T07:51:41.826</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Shared\pages\game\game.js">
+      <PackagePath>pages\game\game.js</PackagePath>
+      <Modified>2016-10-10T11:56:45.970</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Shared\pages\home\home.js">
+      <PackagePath>pages\home\home.js</PackagePath>
+      <Modified>2016-10-06T07:51:41.859</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Windows\bin\Debug\ReverseMap\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-10-10T11:42:35.801</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.WinJS.2.0\1.0\">
+      <Name>Microsoft.WinJS.2.0</Name>
+      <Version>1.0.9600.17018</Version>
+      <Architecture>Neutral</Architecture>
+      <FrameworkIdentity>Name=Microsoft.WinJS.2.0, MinVersion=1.0.9600.17018</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.WinJS.2.0\1.0\Microsoft.WinJS.2.0.appx</AppxLocation>
+      <MoreInfo>http://go.microsoft.com/fwlink/%3fLinkId=260891</MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>
