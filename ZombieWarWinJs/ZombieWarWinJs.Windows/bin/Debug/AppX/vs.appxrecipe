@@ -46,15 +46,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Windows\default.html">
       <PackagePath>default.html</PackagePath>
-      <Modified>2016-10-06T07:51:41.877</Modified>
+      <Modified>2016-10-11T07:13:45.199</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Shared\pages\game\game.html">
       <PackagePath>pages\game\game.html</PackagePath>
-      <Modified>2016-10-11T07:02:24.300</Modified>
+      <Modified>2016-10-11T10:48:19.020</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Shared\pages\home\home.html">
       <PackagePath>pages\home\home.html</PackagePath>
-      <Modified>2016-10-11T07:02:24.307</Modified>
+      <Modified>2016-10-11T07:12:59.954</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Windows\images\logo.png">
       <PackagePath>images\logo.png</PackagePath>
@@ -82,11 +82,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Shared\entities\entity.js">
       <PackagePath>entities\entity.js</PackagePath>
-      <Modified>2016-10-10T12:25:47.352</Modified>
+      <Modified>2016-10-11T12:10:18.570</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Shared\entities\player.js">
       <PackagePath>entities\player.js</PackagePath>
-      <Modified>2016-10-10T12:26:43.644</Modified>
+      <Modified>2016-10-11T12:10:59.061</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Shared\gameUtilities\frame.js">
       <PackagePath>gameUtilities\frame.js</PackagePath>
@@ -102,7 +102,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Shared\pages\game\game.js">
       <PackagePath>pages\game\game.js</PackagePath>
-      <Modified>2016-10-11T07:07:12.408</Modified>
+      <Modified>2016-10-11T12:04:36.049</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Shared\pages\home\home.js">
       <PackagePath>pages\home\home.js</PackagePath>

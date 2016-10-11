@@ -1,8 +1,8 @@
 ﻿(function () {
     "use strict";
-    var Entity = function () {
-
-        function init() {
+    var Entity = {
+        //Questa è un'interfaccia, non deve mai essere inizializzata con una new!
+        init : function() {
             //Position to draw
             this.position = {
                 xScreen: 0, yScreen: 0, xMap: 0, yMap: 0, rotation: 0
@@ -21,28 +21,20 @@
             this.velocity = 0;
             this.alive = true;
 
-        }
-
-
-        function update() {
+        },
+        update: function() {
             
-        }
-
-
-        function draw() {
-            frames[this.currentFrame].draw(this.position.xScreen, this.position.yScreen, this.image, this
+        },
+        draw: function() {
+            this.frames[this.currentFrame].draw(this.position.xScreen, this.position.yScreen, this.image, this
                 .position.rotation, this.flipped, this.scale);
-        }
-
-
-        function loadImage(path) {
+        },
+        loadImage: function(path) {
             var img = new Image();
             img.src = path;
             return img;
         }
-
-
     }
 
-    this.game.Entity = Entity;
+    game.Entity = Entity;
 }())

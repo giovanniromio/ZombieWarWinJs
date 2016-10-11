@@ -26,7 +26,6 @@
 
 (function(window) {
     "use strict";
-
     window.game = {
         system: null,
         isPaused: false
@@ -37,8 +36,8 @@
 
 var System = function (updateFPS, canvasID) {
     
-    this.canvasContext = null;
-    this.canvasElement = null;
+    this.canvascontext = null;
+    this.canvaselement = null;
 
     this.entities = [];
     this.player = null;
@@ -54,22 +53,21 @@ var System = function (updateFPS, canvasID) {
     this.timerID = 0;
 
     this.init = function() {
-        this.canvasElement = document.getElementById(canvasID);
-        this.canvasContext = this.canvasElement.getContext("2d");
+        this.canvaselement = document.getElementById(canvasID);
+        this.canvascontext = this.canvaselement.getContext("2d");
 
         this.gametick = 1000 / updateFPS;
         this.gametick = parseFloat(this.gametick.toFixed(5)); //to fix float errors
 
         //Map initialization
-        this.player = createEntity("Player");
-
+        this.player = this.createEntity("Player");
 
         //Player initialization
         //ZombieManager initialization
         //BulletManager initialization
         //Hud initialization
-
-        this.timerID = setInterval(this.run(), 1);
+        var that = this;
+        this.timerID = setInterval(function(){that.run()}, 1);
     }
 
 
@@ -79,7 +77,7 @@ var System = function (updateFPS, canvasID) {
         //| >>gt1<< | >>gt2<< | >>gt3<< | >>gt4<< | >>gt5<< | => 1S
 
         this.now = Date.now();
-        this.dt += Math.Main(this.now - this.last, this.gametick * 5);
+        this.dt += Math.min(this.now - this.last, this.gametick * 5);
 
         while (this.dt > this.gametick) {
             this.update();
@@ -93,10 +91,13 @@ var System = function (updateFPS, canvasID) {
 
     this.update = function () {
 
-        //Map update        
-        //Player update
-        //Zombies update
-        //Bullets update
+        //Map update   
+        this.entities.forEach(function (entity) {
+            //Player draw
+            //Zombies draw
+            //Bullets draw
+            entity.update();
+        });
         //Hud update
 
     }
@@ -105,11 +106,11 @@ var System = function (updateFPS, canvasID) {
     this.draw = function () {
 
 
-        this.canvasContext.clearRect(0, 0, 768, 1366);
+        this.canvascontext.clearRect(0, 0, 768, 1366);
 
         //Map draw    
         
-        this.entities.foreach(function (entity) {
+        this.entities.forEach(function (entity) {
             //Player draw
             //Zombies draw
             //Bullets draw
@@ -119,17 +120,18 @@ var System = function (updateFPS, canvasID) {
         //Hud draw
     }
 
+    this.createEntity = function(entity, settings) {
+        if (typeof settings !== "undefined") {
+            this.entities.push(new game[entity](settings));
+        } else {
+            this.entities.push(new game[entity]());
+        }
+        return this.entities[this.entities.length - 1];
+    }
+    
 }
 
 function startGame() {
     game.system = new System(30, "canvas2d");
-}
-
-function createEntity(entity, settings) {
-    if (typeof settings !== "undefined") {
-        this.entities.push(new game[entity](settings));
-    } else {
-        this.entities.push(new game[entity]());
-    }
-    return this.entities[this.entities.length - 1];
+    game.system.init();
 }
