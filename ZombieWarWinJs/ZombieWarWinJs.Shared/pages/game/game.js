@@ -105,8 +105,7 @@ var System = function (updateFPS, canvasID) {
 
     this.draw = function () {
 
-
-        this.canvascontext.clearRect(0, 0, 768, 1366);
+        this.canvascontext.clearRect(0, 0, 1366, 768);
 
         //Map draw    
         

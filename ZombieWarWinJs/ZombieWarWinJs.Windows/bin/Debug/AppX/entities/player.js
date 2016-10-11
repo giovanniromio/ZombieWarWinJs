@@ -18,9 +18,9 @@
             this.position.xMap = 200;
             this.position.yMap = 200;
             this.position.rotation = 0;
-
+            //todo in questo punto qui non ha ancorqa caricato l'immagine!
             for (var i = 0; i < 5; i++) {
-                this.frames[i] = new game.Frame(i * this.imgWidth, 0, this.imgWidth, this.imgHeight);
+                this.frames[i] = new game.Frame(100, 0, 30,30);
             }
         };
 
