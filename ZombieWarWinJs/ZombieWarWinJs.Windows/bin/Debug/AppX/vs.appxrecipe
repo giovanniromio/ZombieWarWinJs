@@ -28,7 +28,7 @@
     <AppXManifest Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Windows\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-10-10T11:42:36.464</Modified>
+      <Modified>2016-10-11T07:06:14.886</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -50,11 +50,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Shared\pages\game\game.html">
       <PackagePath>pages\game\game.html</PackagePath>
-      <Modified>2016-10-10T12:37:26.025</Modified>
+      <Modified>2016-10-11T07:02:24.300</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Shared\pages\home\home.html">
       <PackagePath>pages\home\home.html</PackagePath>
-      <Modified>2016-10-10T12:32:09.415</Modified>
+      <Modified>2016-10-11T07:02:24.307</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Windows\images\logo.png">
       <PackagePath>images\logo.png</PackagePath>
@@ -102,16 +102,16 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Shared\pages\game\game.js">
       <PackagePath>pages\game\game.js</PackagePath>
-      <Modified>2016-10-10T11:56:45.970</Modified>
+      <Modified>2016-10-11T07:07:12.408</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Shared\pages\home\home.js">
       <PackagePath>pages\home\home.js</PackagePath>
-      <Modified>2016-10-06T07:51:41.859</Modified>
+      <Modified>2016-10-11T07:02:24.313</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Windows\bin\Debug\ReverseMap\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-10-10T11:42:35.801</Modified>
+      <Modified>2016-10-11T07:06:14.792</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
