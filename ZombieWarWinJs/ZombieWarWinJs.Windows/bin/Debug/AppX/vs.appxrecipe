@@ -82,11 +82,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Shared\entities\entity.js">
       <PackagePath>entities\entity.js</PackagePath>
-      <Modified>2016-10-11T12:10:18.570</Modified>
+      <Modified>2016-10-11T15:42:00.527</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Shared\entities\player.js">
       <PackagePath>entities\player.js</PackagePath>
-      <Modified>2016-10-11T12:28:43.136</Modified>
+      <Modified>2016-10-11T16:26:47.665</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Shared\gameUtilities\frame.js">
       <PackagePath>gameUtilities\frame.js</PackagePath>

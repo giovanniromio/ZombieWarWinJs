@@ -29,7 +29,7 @@
             this.frames[this.currentFrame].draw(this.position.xScreen, this.position.yScreen, this.image, this
                 .position.rotation, this.flipped, this.scale);
         },
-        loadImage: function(path) {
+        loadImage: function (path) {
             var img = new Image();
             img.src = path;
             return img;
