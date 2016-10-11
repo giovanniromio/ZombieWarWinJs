@@ -1,0 +1,15 @@
+C:\Users\Giovanni\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.WindowsPhone\bin\Debug\ReverseMap\resources.pri
+C:\Users\Giovanni\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.WindowsPhone\bin\Debug\AppxManifest.xml
+C:\Users\Giovanni\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.WindowsPhone\bin\Debug\ZombieWarWinJs.WindowsPhone.build.appxrecipe
+C:\Users\Giovanni\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.WindowsPhone\bld\Debug\priconfig.xml
+C:\Users\Giovanni\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.WindowsPhone\bld\Debug\priconfig.xml.intermediate
+C:\Users\Giovanni\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.WindowsPhone\bld\Debug\layout.resfiles
+C:\Users\Giovanni\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.WindowsPhone\bld\Debug\layout.resfiles.intermediate
+C:\Users\Giovanni\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.WindowsPhone\bld\Debug\resources.resfiles
+C:\Users\Giovanni\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.WindowsPhone\bld\Debug\resources.resfiles.intermediate
+C:\Users\Giovanni\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.WindowsPhone\bld\Debug\pri.resfiles
+C:\Users\Giovanni\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.WindowsPhone\bld\Debug\pri.resfiles.intermediate
+C:\Users\Giovanni\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.WindowsPhone\bld\Debug\qualifiers.txt
+C:\Users\Giovanni\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.WindowsPhone\bld\Debug\qualifiers.txt.intermediate
+C:\Users\Giovanni\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.WindowsPhone\bld\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Giovanni\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.WindowsPhone\bld\Debug\ProjectArchitectures.txt

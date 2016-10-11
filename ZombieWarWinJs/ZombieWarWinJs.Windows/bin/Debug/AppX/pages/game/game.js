@@ -58,23 +58,15 @@ var System = function (updateFPS, canvasID) {
 
         this.gametick = 1000 / updateFPS;
         this.gametick = parseFloat(this.gametick.toFixed(5)); //to fix float errors
-
-        //Map initialization
+        
         this.player = this.createEntity("Player");
-
-        //Player initialization
-        //ZombieManager initialization
-        //BulletManager initialization
-        //Hud initialization
+        
         var that = this;
         this.timerID = setInterval(function(){that.run()}, 1);
     }
 
 
-    this.run = function() {
-        //Main GameLoop
-
-        //| >>gt1<< | >>gt2<< | >>gt3<< | >>gt4<< | >>gt5<< | => 1S
+    this.run = function() {       
 
         this.now = Date.now();
         this.dt += Math.min(this.now - this.last, this.gametick * 5);
@@ -85,38 +77,26 @@ var System = function (updateFPS, canvasID) {
         }        
         
         requestAnimationFrame(this.draw());
-
     }
 
 
     this.update = function () {
-
-        //Map update   
-        this.entities.forEach(function (entity) {
-            //Player draw
-            //Zombies draw
-            //Bullets draw
+        
+        this.entities.forEach(function (entity) {            
             entity.update();
-        });
-        //Hud update
+        });       
 
     }
 
 
     this.draw = function () {
 
-        this.canvascontext.clearRect(0, 0, 1366, 768);
-
-        //Map draw    
+        this.canvascontext.clearRect(0, 0, 1366, 768);        
         
-        this.entities.forEach(function (entity) {
-            //Player draw
-            //Zombies draw
-            //Bullets draw
+        this.entities.forEach(function (entity) {            
             entity.draw();
-        });
+        });        
         
-        //Hud draw
     }
 
     this.createEntity = function(entity, settings) {
