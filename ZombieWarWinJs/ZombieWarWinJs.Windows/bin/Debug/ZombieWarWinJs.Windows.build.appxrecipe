@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>GIOVANNI-PC</Machine>
-    <WindowsUser>Giovanni</WindowsUser>
+    <Machine>ROMIOPC</Machine>
+    <WindowsUser>giovanni.romio</WindowsUser>
     <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <TargetOsVersion>6.3</TargetOsVersion>
     <TargetOsDescription>Windows 8.1</TargetOsDescription>
@@ -10,77 +10,77 @@
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>90758a0f-74ed-44c0-8791-de14f548ebfb</PackageIdentityName>
     <PackageIdentityPublisher>CN=Giovanni</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Giovanni\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Windows\bld\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Windows\bld\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Giovanni\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Windows\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Windows\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Giovanni\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Windows\css\default.css">
+    <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Windows\css\default.css">
       <PackagePath>css\default.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Giovanni\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Windows\pages\home\home.css">
+    <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Windows\pages\home\home.css">
       <PackagePath>pages\home\home.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Giovanni\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Shared\pages\game\game.css">
+    <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Shared\pages\game\game.css">
       <PackagePath>pages\game\game.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Giovanni\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Windows\default.html">
+    <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Windows\default.html">
       <PackagePath>default.html</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Giovanni\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Shared\pages\game\game.html">
+    <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Shared\pages\game\game.html">
       <PackagePath>pages\game\game.html</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Giovanni\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Shared\pages\home\home.html">
+    <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Shared\pages\home\home.html">
       <PackagePath>pages\home\home.html</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Giovanni\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Windows\images\logo.png">
+    <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Windows\images\logo.png">
       <PackagePath>images\logo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Giovanni\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Windows\images\smalllogo.png">
+    <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Windows\images\smalllogo.png">
       <PackagePath>images\smalllogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Giovanni\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Windows\images\splashscreen.png">
+    <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Windows\images\splashscreen.png">
       <PackagePath>images\splashscreen.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Giovanni\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Windows\images\storelogo.png">
+    <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Windows\images\storelogo.png">
       <PackagePath>images\storelogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Giovanni\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Windows\resources\sprites\player.png">
+    <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Windows\resources\sprites\player.png">
       <PackagePath>resources\sprites\player.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Giovanni\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Shared\entities\entity.js">
+    <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Shared\entities\entity.js">
       <PackagePath>entities\entity.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Giovanni\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Shared\entities\player.js">
+    <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Shared\entities\player.js">
       <PackagePath>entities\player.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Giovanni\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Shared\gameUtilities\frame.js">
+    <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Shared\gameUtilities\frame.js">
       <PackagePath>gameUtilities\frame.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Giovanni\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Shared\js\navigator.js">
+    <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Shared\js\navigator.js">
       <PackagePath>js\navigator.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Giovanni\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Shared\js\default.js">
+    <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Shared\js\default.js">
       <PackagePath>js\default.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Giovanni\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Shared\pages\game\game.js">
+    <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Shared\pages\game\game.js">
       <PackagePath>pages\game\game.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Giovanni\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Shared\pages\home\home.js">
+    <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Shared\pages\home\home.js">
       <PackagePath>pages\home\home.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Giovanni\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Windows\bin\Debug\ReverseMap\resources.pri">
+    <AppxPackagedFile Include="C:\Users\giovanni.romio\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Windows\bin\Debug\ReverseMap\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>

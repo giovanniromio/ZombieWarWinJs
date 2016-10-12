@@ -38,45 +38,46 @@ var System = function (updateFPS, canvasID) {
     //pubbliche perchè richiesto dalla libreria Frame.js
     this.canvascontext = null;
     this.canvaselement = null;
+    
 
-    var entities = [];
-    var player = null;    
+    this.entities = [];
+    this.player = null;    
 
-    var gametick = 0; // | >>gt1<< | >>gt2<< | >>gt3<< | >>gt4<< | >>gt5<< | => 1S
-    var frameID = 0;    
-    var dt = 0;
-    var now = 0;
-    var last = 0;
+    this.gametick = 0; // | >>gt1<< | >>gt2<< | >>gt3<< | >>gt4<< | >>gt5<< | => 1S
+    this.frameID = 0;    
+    this.dt = 0;
+    this.now = 0;
+    this.last = 0;
     //Clear or pause animation timer
-    var timerID = 0;
-
-    var init = function() {
+    this.timerID = 0;
+    
+    this.init = function  () {
         this.canvaselement = document.getElementById(canvasID);
         this.canvascontext = this.canvaselement.getContext("2d");
 
-        gametick = 1000 / updateFPS;
-        gametick = parseFloat(gametick.toFixed(5)); //to fix float errors
+        this.gametick = 1000 / updateFPS;
+        this.gametick = parseFloat(this.gametick.toFixed(5)); //to fix float errors
         
-        player = createEntity("Player");
+        this.player = this.createEntity("Player");
         
         var that = this;
-        timerID = setInterval(function(){that.run()}, 1);
+        this.timerID = setInterval(function(){that.run()}, 1);
     }
 
-    var run = function() {       
+    this.run = function() {
 
-        now = Date.now();
-        dt += Math.min(now - last, gametick * 5);
+        this.now = Date.now();
+        this.dt += Math.min(this.now - this.last, this.gametick * 5);
 
-        while (dt > gametick) {
-            update();
-            dt -= gametick;
+        while (this.dt > this.gametick) {
+            this.update();
+            this.dt -= this.gametick;
         }        
         
-        requestAnimationFrame(draw());
+        requestAnimationFrame(this.draw());
     }
 
-    var update = function () {
+    this.update = function() {
         
         this.entities.forEach(function (entity) {            
             entity.update();
@@ -84,7 +85,7 @@ var System = function (updateFPS, canvasID) {
 
     }
 
-    var draw = function () {
+    this.draw = function  () {
 
         this.canvascontext.clearRect(0, 0, 1366, 768);        
         
@@ -94,7 +95,7 @@ var System = function (updateFPS, canvasID) {
         
     }
 
-    var createEntity = function(entity, settings) {
+    this.createEntity = function (entity, settings) {
         if (typeof settings !== "undefined") {
             this.entities.push(new game[entity](settings));
         } else {
@@ -103,7 +104,6 @@ var System = function (updateFPS, canvasID) {
         return this.entities[this.entities.length - 1];
     }
     
-    return {init: init}
 
 }
 

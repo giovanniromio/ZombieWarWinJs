@@ -35,24 +35,23 @@
 
 
 var System = function (updateFPS, canvasID) {
-    
+    //pubbliche perchè richiesto dalla libreria Frame.js
     this.canvascontext = null;
     this.canvaselement = null;
+    
 
     this.entities = [];
-    this.player = null;
-    
+    this.player = null;    
 
     this.gametick = 0; // | >>gt1<< | >>gt2<< | >>gt3<< | >>gt4<< | >>gt5<< | => 1S
     this.frameID = 0;    
     this.dt = 0;
     this.now = 0;
     this.last = 0;
-
     //Clear or pause animation timer
     this.timerID = 0;
-
-    this.init = function() {
+    
+    this.init = function  () {
         this.canvaselement = document.getElementById(canvasID);
         this.canvascontext = this.canvaselement.getContext("2d");
 
@@ -65,8 +64,7 @@ var System = function (updateFPS, canvasID) {
         this.timerID = setInterval(function(){that.run()}, 1);
     }
 
-
-    this.run = function() {       
+    this.run = function() {
 
         this.now = Date.now();
         this.dt += Math.min(this.now - this.last, this.gametick * 5);
@@ -79,8 +77,7 @@ var System = function (updateFPS, canvasID) {
         requestAnimationFrame(this.draw());
     }
 
-
-    this.update = function () {
+    this.update = function() {
         
         this.entities.forEach(function (entity) {            
             entity.update();
@@ -88,8 +85,7 @@ var System = function (updateFPS, canvasID) {
 
     }
 
-
-    this.draw = function () {
+    this.draw = function  () {
 
         this.canvascontext.clearRect(0, 0, 1366, 768);        
         
@@ -99,7 +95,7 @@ var System = function (updateFPS, canvasID) {
         
     }
 
-    this.createEntity = function(entity, settings) {
+    this.createEntity = function (entity, settings) {
         if (typeof settings !== "undefined") {
             this.entities.push(new game[entity](settings));
         } else {
@@ -108,6 +104,7 @@ var System = function (updateFPS, canvasID) {
         return this.entities[this.entities.length - 1];
     }
     
+
 }
 
 function startGame() {
