@@ -67,13 +67,13 @@ var System = function (updateFPS, canvasID) {
     this.run = function() {
 
         this.now = Date.now();
-        this.dt += Math.min(this.now - this.last, this.gametick * 5);
+        this.dt += Math.min(this.now - this.last, this.gametick*5);
 
         while (this.dt > this.gametick) {
             this.update();
             this.dt -= this.gametick;
         }        
-        
+        this.last = Date.now();
         requestAnimationFrame(this.draw());
     }
 

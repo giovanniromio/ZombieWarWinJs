@@ -9,7 +9,7 @@
         this.imageHeight = 31;
         this.framesInAnimation = 5;
         this.image = null;
-        this.animation = {spritesheet: null, timer: 0, timing: 5}
+        this.animation = {spritesheet: null, timer: 0, timing: 1}
 
         this.init();
     };
