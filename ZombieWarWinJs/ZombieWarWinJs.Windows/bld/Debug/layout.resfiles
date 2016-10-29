@@ -1,6 +1,7 @@
 entities\entity.js
 entities\player.js
 gameUtilities\frame.js
+gameUtilities\inputManager.js
 js\default.js
 js\navigator.js
 pages\game\game.css

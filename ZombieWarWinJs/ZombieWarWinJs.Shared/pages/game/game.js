@@ -28,7 +28,7 @@
     "use strict";
     window.game = {
         system: null,
-        isPaused: false
+        isPaused: false,        
     };
 
 }(window));
@@ -38,7 +38,8 @@ var System = function (updateFPS, canvasID) {
     //pubbliche perchè richiesto dalla libreria Frame.js
     this.canvascontext = null;
     this.canvaselement = null;
-    
+    this.canvasWidth = 1366;
+    this.canvasHeight = 768; 
 
     this.entities = [];
     this.player = null;    
@@ -50,6 +51,8 @@ var System = function (updateFPS, canvasID) {
     this.last = 0;
     //Clear or pause animation timer
     this.timerID = 0;
+
+    this.inputManager = null;
     
     this.init = function  () {
         this.canvaselement = document.getElementById(canvasID);
@@ -58,10 +61,12 @@ var System = function (updateFPS, canvasID) {
         this.gametick = 1000 / updateFPS;
         this.gametick = parseFloat(this.gametick.toFixed(5)); //to fix float errors
         
-        this.player = this.createEntity("Player");
+        this.inputManager = new game.InputManager();
+
+        this.player = this.createEntity("Player");        
         
         var that = this;
-        this.timerID = setInterval(function(){that.run()}, 1);
+        this.timerID = setInterval(function () { that.run() }, 1);        
     }
 
     this.run = function() {
@@ -87,7 +92,7 @@ var System = function (updateFPS, canvasID) {
 
     this.draw = function  () {
 
-        this.canvascontext.clearRect(0, 0, 1366, 768);        
+        this.canvascontext.clearRect(0, 0, this.canvasWidth, this.canvasHeight);
         
         this.entities.forEach(function (entity) {            
             entity.draw();

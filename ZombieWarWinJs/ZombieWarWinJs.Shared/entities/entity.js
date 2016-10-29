@@ -11,7 +11,7 @@
         this.flipped = false;
         this.scale = 1;
 
-        this.velocity = 0;
+        this.velocity = 1;
         this.alive = true;       
     }
 

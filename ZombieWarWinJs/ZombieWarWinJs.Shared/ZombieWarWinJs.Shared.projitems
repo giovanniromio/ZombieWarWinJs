@@ -9,6 +9,7 @@
     <Content Include="$(MSBuildThisFileDirectory)entities\entity.js" />
     <Content Include="$(MSBuildThisFileDirectory)entities\player.js" />
     <Content Include="$(MSBuildThisFileDirectory)gameUtilities\frame.js" />
+    <Content Include="$(MSBuildThisFileDirectory)gameUtilities\inputManager.js" />
     <Content Include="$(MSBuildThisFileDirectory)js\navigator.js" />
     <Content Include="$(MSBuildThisFileDirectory)js\default.js" />
     <Content Include="$(MSBuildThisFileDirectory)pages\game\game.css" />
