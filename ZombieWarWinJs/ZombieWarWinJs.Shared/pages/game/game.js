@@ -113,6 +113,6 @@ var System = function (updateFPS, canvasID) {
 }
 
 function startGame() {
-    game.system = new System(120, "canvas2d");
+    game.system = new System(30, "canvas2d");
     game.system.init();
 }

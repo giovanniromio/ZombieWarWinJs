@@ -43,13 +43,13 @@
     InputManager.prototype.keyUp = function (e) {        
         switch (e.keyCode) {
             //Arrow left
-            case (37): this.arrowLeft = false;
+            case (37): this.arrowLeft = false; break;
             //Upper key
-            case (38): this.arrowUp = false;
+            case (38): this.arrowUp = false; break;
             //Arrow right
-            case (39): this.arrowRight = false;
+            case (39): this.arrowRight = false; break;
             //Arrow down
-            case (40): this.arrowDown = false;
+            case (40): this.arrowDown = false; break;
         }
     }    
 

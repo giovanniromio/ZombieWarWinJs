@@ -86,7 +86,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Giovanni\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Shared\entities\player.js">
       <PackagePath>entities\player.js</PackagePath>
-      <Modified>2016-11-07T19:56:58.477</Modified>
+      <Modified>2016-11-07T20:00:47.589</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Giovanni\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Shared\gameUtilities\frame.js">
       <PackagePath>gameUtilities\frame.js</PackagePath>
@@ -94,7 +94,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Giovanni\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Shared\gameUtilities\inputManager.js">
       <PackagePath>gameUtilities\inputManager.js</PackagePath>
-      <Modified>2016-11-07T18:31:35.133</Modified>
+      <Modified>2016-11-07T20:37:11.959</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Giovanni\Source\Repos\ZombieWarWinJs\ZombieWarWinJs\ZombieWarWinJs.Shared\js\navigator.js">
       <PackagePath>js\navigator.js</PackagePath>

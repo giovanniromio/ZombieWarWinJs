@@ -14,8 +14,7 @@
         this.framesInAnimation = 5;
         this.image = null;
         this.animation = { spritesheet: null, timer: 0, timing: 1 }
-        this.velocity = 50 / 1000; //pixel in second
-        
+        this.velocity = 50 / 1000; //pixel in second        
 
         this.init();
     };

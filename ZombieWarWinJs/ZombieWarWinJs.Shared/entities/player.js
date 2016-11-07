@@ -3,11 +3,9 @@
 
     function Player() {
         game.Entity.call(this); //inizializza il costruttore
-
-        //Per ogni frame bisogna sommare la velocita alla posizione [e la accellerazione alla velocità]
+        
         this.position = { xScreen: 200, yScreen: 200, xMap: 200, yMap: 200, rotation: 0 };       
-        this.velocityVector = null;
-        this.accelleration = { min : 1, max : 5 };
+        this.distance = null;        
                 
         this.imageWidth = 0;
         this.imageHeight = 0;
@@ -45,29 +43,31 @@
             }
         }
 
-        var velocityX = 0;
-        var velocityY = 0;
+        var directionX = 0;
+        var directionY = 0;
 
         if (game.system.inputManager.arrowRight) {
-            velocityX += 1;
+            directionX += 1;
         }
 
         if (game.system.inputManager.arrowUp) {
-            velocityY -= 1;
+            directionY -= 1;
         }
 
         if (game.system.inputManager.arrowDown) {
-            velocityY += 1;
+            directionY += 1;
         }
 
         if (game.system.inputManager.arrowLeft) {
-            velocityX -= 1;
+            directionX -= 1;
         }
                 
-        this.velocityVector = Math.sqrt(Math.pow(velocityX,2) + Math.pow(velocityY,2));
-        if (this.velocityVector != 0) {
-            this.position.xScreen += (velocityX / this.velocityVector) * (dt * this.velocity);
-            this.position.yScreen += (velocityY / this.velocityVector) * (dt * this.velocity);
+        this.distance = Math.sqrt(Math.pow(directionX, 2) + Math.pow(directionY, 2));
+        if (this.distance != 0) {
+            //Vettore direzione * vettore velocità
+            //Lo spazio percorso è dato dal vettore direzione * (tempoTrascorsoT * distanzaDaPercorrereInT)
+            this.position.xScreen += (directionX / this.distance) * (dt * this.velocity);
+            this.position.yScreen += (directionY / this.distance) * (dt * this.velocity);
         }
 
         var cP = game.system.inputManager.cursorPosition;
