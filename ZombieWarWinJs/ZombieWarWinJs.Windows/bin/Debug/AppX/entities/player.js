@@ -4,14 +4,18 @@
     function Player() {
         game.Entity.call(this); //inizializza il costruttore
 
-        this.position = { xScreen: 200, yScreen: 200, xMap: 200, yMap: 200, rotation: 0 };
+        //Per ogni frame bisogna sommare la velocita alla posizione [e la accellerazione alla velocità]
+        this.position = { xScreen: 200, yScreen: 200, xMap: 200, yMap: 200, rotation: 0 };       
         this.velocityVector = null;
-        
+        this.accelleration = { min : 1, max : 5 };
+                
         this.imageWidth = 0;
         this.imageHeight = 0;
         this.framesInAnimation = 5;
         this.image = null;
-        this.animation = {spritesheet: null, timer: 0, timing: 1}
+        this.animation = { spritesheet: null, timer: 0, timing: 1 }
+        this.velocity = 50 / 1000; //pixel in second
+        
 
         this.init();
     };
@@ -31,7 +35,7 @@
         }
             
     };
-    Player.prototype.update = function() {
+    Player.prototype.update = function(dt) {
         this.image = this.animation.spritesheet;
         
         if (game.system.inputManager.arrowLeft === true || game.system.inputManager.arrowRight === true
@@ -43,36 +47,38 @@
         }
 
         var velocityX = 0;
-        var velocityY = 0;        
+        var velocityY = 0;
 
-        if (game.system.inputManager.arrowRight) {            
-            velocityX += this.velocity;
+        if (game.system.inputManager.arrowRight) {
+            velocityX += 1;
         }
 
-        if (game.system.inputManager.arrowUp) {            
-            velocityY -= this.velocity;
+        if (game.system.inputManager.arrowUp) {
+            velocityY -= 1;
         }
 
-        if (game.system.inputManager.arrowDown) {            
-            velocityY += this.velocity;
+        if (game.system.inputManager.arrowDown) {
+            velocityY += 1;
         }
 
-        if (game.system.inputManager.arrowLeft) {            
-            velocityX -= this.velocity;
+        if (game.system.inputManager.arrowLeft) {
+            velocityX -= 1;
         }
                 
         this.velocityVector = Math.sqrt(Math.pow(velocityX,2) + Math.pow(velocityY,2));
         if (this.velocityVector != 0) {
-            this.position.xScreen += velocityX / this.velocityVector;
-            this.position.yScreen += velocityY / this.velocityVector;
+            this.position.xScreen += (velocityX / this.velocityVector) * (dt * this.velocity);
+            this.position.yScreen += (velocityY / this.velocityVector) * (dt * this.velocity);
         }
 
+        var cP = game.system.inputManager.cursorPosition;
+
+        this.position.rotation = (Math.atan2((cP.y - (this.position.yScreen + (this.imageHeight / 2))), cP.x - (this.position.xScreen + (this.imageWidth / 2))) - Math.PI/2) * 180 / Math.PI;//Perchè l'immagine è ruotata verso il basso e non verso destra e la funzione draw di frame utilizza i gradi e non i radianti
     };
     
-    //Player.prototype.draw = function () {
-    //    this.frames[this.currentFrame].draw(this.position.xScreen, this.position.yScreen, this.image,
-    //        this.position.rotation, this.flipped, this.scale);
-    //};
+    Player.prototype.draw = function () {
+        game.Entity.prototype.draw.call(this, null);
+    };
     
     Player.prototype.constructor = Player;
 

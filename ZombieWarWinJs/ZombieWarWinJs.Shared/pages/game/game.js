@@ -83,9 +83,9 @@ var System = function (updateFPS, canvasID) {
     }
 
     this.update = function() {
-        
+        var that = this;
         this.entities.forEach(function (entity) {            
-            entity.update();
+            entity.update(that.dt);
         });       
 
     }
@@ -113,6 +113,6 @@ var System = function (updateFPS, canvasID) {
 }
 
 function startGame() {
-    game.system = new System(30, "canvas2d");
+    game.system = new System(120, "canvas2d");
     game.system.init();
 }

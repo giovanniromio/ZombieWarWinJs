@@ -6,6 +6,7 @@
         this.arrowRight = false;
         this.arrowUp = false;
         this.arrowDown = false;
+        this.cursorPosition = {x : null, y : null}
 
         this.init();
     }
@@ -18,6 +19,11 @@
         window.addEventListener("keyup", function(e){
             that.keyUp.call(that, e);
         });
+        window.addEventListener("mousemove",function(e){
+            that.mouseMove.call(that,e)
+        });
+
+
     }
 
     InputManager.prototype.keyDown = function (e) {
@@ -46,6 +52,12 @@
             case (40): this.arrowDown = false;
         }
     }    
+
+    InputManager.prototype.mouseMove = function (e) {
+        var canvasRect = game.system.canvaselement.getBoundingClientRect();
+        this.cursorPosition.x = e.clientX - canvasRect.left;
+        this.cursorPosition.y = e.clientY - canvasRect.top;
+    }
 
     game.InputManager = InputManager;
 
